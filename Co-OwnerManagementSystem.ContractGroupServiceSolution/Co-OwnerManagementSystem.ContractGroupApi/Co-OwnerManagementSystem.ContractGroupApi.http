@@ -1,0 +1,6 @@
+@Co_OwnerManagementSystem.ContractGroupApi_HostAddress = http://localhost:5206
+
+GET {{Co_OwnerManagementSystem.ContractGroupApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

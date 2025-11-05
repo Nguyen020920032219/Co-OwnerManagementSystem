@@ -1,0 +1,6 @@
+@Co_OwnerManagementSystem.BookingApi_HostAddress = http://localhost:5048
+
+GET {{Co_OwnerManagementSystem.BookingApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

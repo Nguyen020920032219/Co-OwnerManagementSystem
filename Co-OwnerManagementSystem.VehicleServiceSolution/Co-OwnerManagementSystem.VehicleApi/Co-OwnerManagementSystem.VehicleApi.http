@@ -1,0 +1,6 @@
+@Co_OwnerManagementSystem.VehicleApi_HostAddress = http://localhost:5263
+
+GET {{Co_OwnerManagementSystem.VehicleApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

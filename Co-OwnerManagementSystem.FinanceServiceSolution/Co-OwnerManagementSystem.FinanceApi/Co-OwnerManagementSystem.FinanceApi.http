@@ -1,0 +1,6 @@
+@Co_OwnerManagementSystem.FinanceApi_HostAddress = http://localhost:5212
+
+GET {{Co_OwnerManagementSystem.FinanceApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

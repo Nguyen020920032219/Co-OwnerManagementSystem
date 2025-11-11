@@ -22,9 +22,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Co-OwnerManagementSystem.AuthenticationApplication\Co-OwnerManagementSystem.AuthenticationApplication.csproj" />
-        <ProjectReference Include="..\Co-OwnerManagementSystem.AuthenticationInfrastructure\Co-OwnerManagementSystem.AuthenticationInfrastructure.csproj" />
-        <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj" />
+      <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj" />
+      <ProjectReference Include="..\Co-OwnerManagementSystem.AuthenticationBusiness\Co-OwnerManagementSystem.AuthenticationBusiness.csproj" />
     </ItemGroup>
 
 </Project>

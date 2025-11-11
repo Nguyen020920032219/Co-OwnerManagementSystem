@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.Sh
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Co-OwnerManagementSystem.AuthenticationServiceSolution", "Co-OwnerManagementSystem.AuthenticationServiceSolution", "{62316B49-9F59-24BE-8282-40758F8CE20E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.AuthenticationApplication", "Co-OwnerManagementSystem.AuthenticationServiceSolution\Co-OwnerManagementSystem.AuthenticationApplication\Co-OwnerManagementSystem.AuthenticationApplication.csproj", "{B65110E6-A433-4033-B76A-2BA9220D4462}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.AuthenticationBusiness", "Co-OwnerManagementSystem.AuthenticationServiceSolution\Co-OwnerManagementSystem.AuthenticationBusiness\Co-OwnerManagementSystem.AuthenticationBusiness.csproj", "{B65110E6-A433-4033-B76A-2BA9220D4462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.AuthenticationInfrastructure", "Co-OwnerManagementSystem.AuthenticationServiceSolution\Co-OwnerManagementSystem.AuthenticationInfrastructure\Co-OwnerManagementSystem.AuthenticationInfrastructure.csproj", "{4D206641-D2A3-4730-B752-8C9B960DB94E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.AuthenticationData", "Co-OwnerManagementSystem.AuthenticationServiceSolution\Co-OwnerManagementSystem.AuthenticationData\Co-OwnerManagementSystem.AuthenticationData.csproj", "{4D206641-D2A3-4730-B752-8C9B960DB94E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.AuthenticationApi", "Co-OwnerManagementSystem.AuthenticationServiceSolution\Co-OwnerManagementSystem.AuthenticationApi\Co-OwnerManagementSystem.AuthenticationApi.csproj", "{CB1A18DA-E0AB-4512-B262-E011259A510F}"
 EndProject

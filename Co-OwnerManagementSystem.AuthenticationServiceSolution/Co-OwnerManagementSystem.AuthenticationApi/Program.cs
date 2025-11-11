@@ -1,9 +1,11 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Co_OwnerManagementSystem.AuthenticationData.Entities;
 using Co_OwnerManagementSystem.SharedLibrary.Errors;
 using Co_OwnerManagementSystem.SharedLibrary.Http;
 using Co_OwnerManagementSystem.SharedLibrary.Observability;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
 var b = WebApplication.CreateBuilder(args);
@@ -12,6 +14,9 @@ b.Services.AddSwaggerGen();
 
 b.Services.AddStandardProblemDetails();
 b.Services.AddSharedHttpInfra();
+
+b.Services.AddDbContext<AuthenticationDbContext>(options =>
+    options.UseSqlServer(b.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = b.Build();
 app.UseSwagger();

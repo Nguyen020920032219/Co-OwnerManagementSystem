@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>Co_OwnerManagementSystem.AuthenticationBusiness</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Co-OwnerManagementSystem.AuthenticationData\Co-OwnerManagementSystem.AuthenticationData.csproj" />
+    </ItemGroup>
+
+</Project>

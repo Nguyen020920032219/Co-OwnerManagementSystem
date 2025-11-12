@@ -25,9 +25,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Co-OwnerManagementSystem.VehicleServiceSolution", "Co-OwnerManagementSystem.VehicleServiceSolution", "{E55098AC-D9DB-DC32-0FF9-115F9B8974C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.VehicleApplication", "Co-OwnerManagementSystem.VehicleServiceSolution\Co-OwnerManagementSystem.VehicleApplication\Co-OwnerManagementSystem.VehicleApplication.csproj", "{4EFB1FB9-EBFB-4F08-B5E0-CB9AAB4A70A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.VehicleBusiness", "Co-OwnerManagementSystem.VehicleServiceSolution\Co-OwnerManagementSystem.VehicleBusiness\Co-OwnerManagementSystem.VehicleBusiness.csproj", "{4EFB1FB9-EBFB-4F08-B5E0-CB9AAB4A70A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.VehicleInfrastructure", "Co-OwnerManagementSystem.VehicleServiceSolution\Co-OwnerManagementSystem.VehicleInfrastructure\Co-OwnerManagementSystem.VehicleInfrastructure.csproj", "{076B5E0B-91FD-4696-BE30-2C5DE80276D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.VehicleData", "Co-OwnerManagementSystem.VehicleServiceSolution\Co-OwnerManagementSystem.VehicleData\Co-OwnerManagementSystem.VehicleData.csproj", "{076B5E0B-91FD-4696-BE30-2C5DE80276D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Co-OwnerManagementSystem.VehicleApi", "Co-OwnerManagementSystem.VehicleServiceSolution\Co-OwnerManagementSystem.VehicleApi\Co-OwnerManagementSystem.VehicleApi.csproj", "{482ECCD4-03B2-4D7C-B885-CA708A84C3F4}"
 EndProject

@@ -1,4 +1,4 @@
-﻿namespace SU25_Leopard_PE_LyHaiLuan.Business.Models
+﻿namespace Co_OwnerManagementSystem.SharedLibrary.Errors
 {
     public class ApiException : Exception
     {

@@ -8,19 +8,22 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10"/>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8"/>
-        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.13.1"/>
-        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.13.1"/>
-        <PackageReference Include="Polly.Extensions.Http" Version="3.0.0"/>
-        <PackageReference Include="Serilog.AspNetCore" Version="9.0.0"/>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.10" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.13.1" />
+        <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.13.1" />
+        <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+        <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.6" />
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Co-OwnerManagementSystem.VehicleApplication\Co-OwnerManagementSystem.VehicleApplication.csproj"/>
-        <ProjectReference Include="..\Co-OwnerManagementSystem.VehicleInfrastructure\Co-OwnerManagementSystem.VehicleInfrastructure.csproj"/>
-        <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj"/>
+        <ProjectReference Include="..\Co-OwnerManagementSystem.VehicleBusiness\Co-OwnerManagementSystem.VehicleBusiness.csproj" />
+        <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj" />
     </ItemGroup>
 
 </Project>

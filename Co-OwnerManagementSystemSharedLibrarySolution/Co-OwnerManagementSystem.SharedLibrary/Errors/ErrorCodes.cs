@@ -7,4 +7,7 @@ public static class ErrorCodes
     public const string Conflict = "conflict";
     public const string Forbidden = "forbidden";
     public const string Internal = "internal_error";
+    public const string UnAuthorized = "unauthorized";
+
+    public const string InvalidCredentials = "invalid_credentials";
 }

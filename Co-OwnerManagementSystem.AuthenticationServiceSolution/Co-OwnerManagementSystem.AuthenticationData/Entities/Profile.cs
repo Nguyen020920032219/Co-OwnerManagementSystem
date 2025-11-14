@@ -1,14 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
 namespace Co_OwnerManagementSystem.AuthenticationData.Entities;
 
 [Table("Profile")]
-[Index("UserId", Name = "UQ__Profile__1788CC4D8B439725", IsUnique = true)]
-[Index("CitizenIdentification", Name = "UQ__Profile__3C297E77F77ABA68", IsUnique = true)]
-[Index("DrivingLicense", Name = "UQ__Profile__5F5D273932D028F2", IsUnique = true)]
-[Index("Email", Name = "UQ__Profile__A9D10534A74CB842", IsUnique = true)]
+[Index("UserId", Name = "UQ__Profile__1788CC4D1757315A", IsUnique = true)]
+[Index("CitizenIdentification", Name = "UQ__Profile__3C297E7763617A35", IsUnique = true)]
+[Index("DrivingLicense", Name = "UQ__Profile__5F5D2739DEB4D569", IsUnique = true)]
+[Index("Email", Name = "UQ__Profile__A9D105349907DDB2", IsUnique = true)]
 public partial class Profile
 {
     [Key]

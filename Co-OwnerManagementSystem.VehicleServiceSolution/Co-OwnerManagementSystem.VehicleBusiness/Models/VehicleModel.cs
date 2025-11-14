@@ -1,0 +1,34 @@
+using Co_OwnerManagementSystem.VehicleInfrastructure.Enum;
+
+namespace Co_OwnerManagementSystem.VehicleApplication.Models;
+
+public class VehicleModel
+{
+    public int VehicleId { get; set; }
+
+    public int? ContractId { get; set; }
+
+    public string LicensePlate { get; set; } = null!;
+
+    public string Vin { get; set; } = null!;
+
+    public string? Make { get; set; }
+
+    public string? Model { get; set; }
+
+    public int? Year { get; set; }
+
+    public string? Color { get; set; }
+
+    public decimal? BatteryCapacity { get; set; }
+
+    public string? ChargingType { get; set; }
+
+    public DateOnly? PurchaseDate { get; set; }
+
+    public decimal? PurchasePrice { get; set; }
+
+    public int CoOwnerGroupId { get; set; }
+
+    public VehicleStatus Status { get; set; }
+}

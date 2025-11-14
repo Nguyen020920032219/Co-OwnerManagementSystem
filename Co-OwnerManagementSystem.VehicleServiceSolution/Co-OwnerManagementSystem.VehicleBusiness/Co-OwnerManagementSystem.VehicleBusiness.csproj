@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>Co_OwnerManagementSystem.VehicleApplication</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="15.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj" />
+      <ProjectReference Include="..\Co-OwnerManagementSystem.VehicleData\Co-OwnerManagementSystem.VehicleData.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -14,6 +14,7 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
         <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.13.1" />
         <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.13.1" />
         <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
@@ -24,6 +25,10 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Co-OwnerManagementSystemSharedLibrarySolution\Co-OwnerManagementSystem.SharedLibrary\Co-OwnerManagementSystem.SharedLibrary.csproj" />
       <ProjectReference Include="..\Co-OwnerManagementSystem.AuthenticationBusiness\Co-OwnerManagementSystem.AuthenticationBusiness.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\" />
     </ItemGroup>
 
 </Project>

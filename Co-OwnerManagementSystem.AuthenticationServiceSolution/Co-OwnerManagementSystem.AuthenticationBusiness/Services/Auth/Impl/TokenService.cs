@@ -88,7 +88,7 @@ public class TokenService : ITokenService
         }
     }
 
-    public async Task<AuthTokenResult> CreateAuthToken(User user)
+    public async Task<AuthTokenResult> CreateAuthToken(AppUser user)
     {
         {
             List<Claim> claims =

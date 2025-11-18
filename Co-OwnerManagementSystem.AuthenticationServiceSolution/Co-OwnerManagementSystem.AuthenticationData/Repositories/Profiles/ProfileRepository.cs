@@ -3,7 +3,7 @@ using Co_OwnerManagementSystem.SharedLibrary.Base;
 
 namespace Co_OwnerManagementSystem.AuthenticationData.Repositories.Profiles;
 
-public class ProfileRepository : BaseRepository<AuthenticationDbContext, Profile, int>, IProfileRepository
+public class ProfileRepository : BaseRepository<AuthenticationDbContext, UserProfile, int>, IProfileRepository
 {
     public ProfileRepository(AuthenticationDbContext context) : base(context)
     {

@@ -26,5 +26,5 @@ public partial class AuthToken
 
     [ForeignKey("UserId")]
     [InverseProperty("AuthTokens")]
-    public virtual User? User { get; set; }
+    public virtual AppUser? User { get; set; }
 }

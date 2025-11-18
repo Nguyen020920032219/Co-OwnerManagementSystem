@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Co_OwnerManagementSystem.AuthenticationData.Entities;
 
-[Table("User")]
-[Index("PhoneNumber", Name = "UQ__User__85FB4E3886FDEC7A", IsUnique = true)]
-public partial class User
+[Table("AppUser")]
+[Index("PhoneNumber", Name = "UQ__AppUser__85FB4E3854560FCC", IsUnique = true)]
+public partial class AppUser
 {
     [Key]
     public int UserId { get; set; }
@@ -24,10 +24,10 @@ public partial class User
     [InverseProperty("User")]
     public virtual ICollection<AuthToken> AuthTokens { get; set; } = new List<AuthToken>();
 
-    [InverseProperty("User")]
-    public virtual Profile? Profile { get; set; }
-
     [ForeignKey("RoleId")]
-    [InverseProperty("Users")]
+    [InverseProperty("AppUsers")]
     public virtual Role Role { get; set; } = null!;
+
+    [InverseProperty("User")]
+    public virtual UserProfile? UserProfile { get; set; }
 }

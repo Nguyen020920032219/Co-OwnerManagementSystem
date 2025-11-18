@@ -73,7 +73,7 @@ public class AuthService : IAuthService
             throw new ApiException(StatusCodes.Status409Conflict, ErrorCodes.Conflict, "Email are existed");
         }
         
-        var user = new User()
+        var user = new AppUser()
         {
             PhoneNumber = request.PhoneNumber,
             PasswordHash = PasswordHasher.HashPassword(request.Password),
@@ -86,7 +86,7 @@ public class AuthService : IAuthService
                 "Failed when create user");
         }
 
-        var profile = new Profile()
+        var profile = new UserProfile()
         {
             FirstName = request.FirstName,
             LastName = request.LastName,
@@ -95,8 +95,6 @@ public class AuthService : IAuthService
             Gender = request.Gender,
             DateOfBirth = request.DateOfBirth,
             UserId = userCreated.UserId,
-            CitizenIdentification = "",
-            DrivingLicense = ""
         };
 
         var profileCreated = await _profileRepository.Add(profile);
@@ -123,18 +121,18 @@ public class AuthService : IAuthService
     {
         var user = await _userRepository
             .DbSet()
-            .Include(p => p.Profile)
+            .Include(p => p.UserProfile)
             .Select(
                 result => new UserModel()
                 {
                     UserId = result.UserId,
                     PhoneNumber = result.PhoneNumber,
-                    Email = result.Profile.Email,
-                    FirstName = result.Profile.FirstName,
-                    LastName = result.Profile.LastName,
-                    Gender = result.Profile.Gender,
-                    DateOfBirth = result.Profile.DateOfBirth,
-                    Address = result.Profile.Address
+                    Email = result.UserProfile.Email,
+                    FirstName = result.UserProfile.FirstName,
+                    LastName = result.UserProfile.LastName,
+                    Gender = result.UserProfile.Gender,
+                    DateOfBirth = result.UserProfile.DateOfBirth,
+                    Address = result.UserProfile.Address
                 }
                 )
             .FirstOrDefaultAsync(u => u.UserId == userId);

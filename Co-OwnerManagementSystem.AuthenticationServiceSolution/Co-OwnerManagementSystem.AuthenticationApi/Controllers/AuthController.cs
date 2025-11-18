@@ -30,6 +30,7 @@ namespace Co_OwnerManagementSystem.AuthenticationApi.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody]RegisterUserRequestModel model)
         {
+            if (!ModelState.IsValid) return BadRequest(ModelState);
             var response = await _authService.Register(model);
             return Ok(response);
         }

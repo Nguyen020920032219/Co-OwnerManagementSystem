@@ -14,5 +14,5 @@ public interface ITokenService
     string ComputeSha256(string input);
     
     Task InvalidateToken(string refreshToken);
-    Task<AuthTokenResult> CreateAuthToken(User user);
+    Task<AuthTokenResult> CreateAuthToken(AppUser user);
 }
